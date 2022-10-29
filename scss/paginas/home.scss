@@ -1,0 +1,186 @@
+body{
+    .innerWidth{
+        max-width: 1200px;
+        width: 1200px;
+        padding: 15px 24px;
+        margin: auto;
+    }
+    header{
+        background-color: $color-fundo;
+        border-bottom: 1px solid #424141;
+        .innerWidth{
+            .navBar{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .logo{
+                    width: 70px;
+                    height: 80px;
+                }
+                .navMenu{
+                    display: flex;
+                    align-items: center;
+                    gap: 32px;
+                    .navItem{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        padding: 12px;
+                        gap: 10px;
+                        list-style: none; 
+                        transition: 0.5s ease;
+                        .navLink{
+                            font-family: 'Syne';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            text-transform: uppercase;
+                            color: $color-branco;
+                            background-color: transparent;
+                            transition: 0.5s ease;
+                        }
+                    }
+                    .navItem:hover{
+                        background-color: $color-branco;
+                        .navLink{
+                            color: $color-fundo;
+                        }
+                    }
+                }
+                .navIdioma{
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    .idiomaItem{
+                        list-style: none;
+                        .navLink{
+                            font-family: 'Syne';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            text-transform: capitalize;
+                            color: $color-branco;
+                        }
+                    }
+                    #idiomaAtivo{
+                        .navLink{
+                            color: $color-clara02;
+                        }
+                    }
+                }
+                .menuHamburguer{
+                    display: none;
+                    .bar{
+                        display: block;
+                        width: 28px;
+                        height: 3px;
+                        border-radius: 2px;
+                        margin: 5px auto;
+                        background-color: $color-branco;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    .home{
+        height: 980px;
+        .innerWidth{
+            .banner{
+                height: 500px;
+                margin-top: 240px;
+                margin-bottom: 240px;
+                h2{
+                    font-family: 'Syne';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 8.75em;
+                    line-height: 168px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    background: none;
+                }
+                h2 span{
+                    color: #000;
+                    background: none;
+                }
+                .nome{
+                    margin-left: 335px;
+                    margin-top: -470px;
+                }
+                #nome2{
+                    z-index: -1;
+                    margin-top: -110px;
+                    color: transparent;
+                    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.2);
+                }
+                #nome2 span{
+                    color: transparent;
+                    -webkit-text-stroke: 0.5px rgba(27, 27, 27, 0.2);
+                }
+                #nome3{
+                    margin-top: -105px;
+                    color: transparent;
+                    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.05);
+                }
+                #nome3 span{
+                    color: transparent;
+                    -webkit-text-stroke: 0.5px rgba(27, 27, 27, 0.1);
+                }
+                .textHome{
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 60px;
+                    line-height: 78px;
+                    color: #000;
+                    margin-left: 30%;
+                    background: none;
+                    .typed{
+                        color: #fff;
+                        background: none;
+                    }
+                    .typed2{
+                        color: #fff;
+                        background: none;
+                    }
+                    .typed-cursor{
+                        color: #fff;
+                        background: none;
+                    }
+                }
+                .textHome span{
+                    background: none;
+                }
+            }
+            .redesSociais{
+                display: flex;
+                flex-direction: column;
+                padding: 0px;
+                gap: 16px;
+                margin-top: -50%;
+                float: right;
+                a{
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 1s;
+                    .icon{
+                        width: 40px;
+                        height: 40px;
+                        path{
+                            transition: all 1s;
+                        }
+                    }
+                }
+                a:hover path{
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}

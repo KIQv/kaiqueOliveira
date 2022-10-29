@@ -1,0 +1,67 @@
+@media (max-width: 425px){
+    body{
+        .innerWidth{
+            max-width: 377px;
+            width: 377px;
+            padding: 15px 24px;
+            margin: auto;
+        }
+        header{
+            width: 100%;
+            position: fixed;
+            .innerWidth{
+                .navBar{
+                    .navMenu{
+                        width: 100%;
+                        position: fixed;
+                        left: -100%;
+                        top: 110px;
+                        gap: 0;
+                        background-color: $color-fundo;
+                        text-align: center;
+                        flex-direction: column;
+                        border-top: 1px solid #424141;
+                        border-bottom: 1px solid #424141;
+                        transition: 0.3s;
+                        .navItem{
+                            margin: 16px 0;
+                        }
+                    }
+                    .navMenu.ativo{
+                        left: 0;
+                    }
+                    .navIdioma{
+                        width: 100%;
+                        position: fixed;
+                        left: -100%;
+                        top: 400px;
+                        background-color: $color-fundo;
+                        text-align: center;
+                        border-bottom: 1px solid #424141;
+                        justify-content: center;
+                        padding: 28px;
+                        transition: 0.3s;
+                        .navItem{
+                            margin: 16px 0;
+                        }
+                    }
+                    .navIdioma.ativo{
+                        left: 0;
+                    }
+                    .menuHamburguer{
+                        display: block;
+                    }
+                    .menuHamburguer.ativo .bar:nth-child(2){
+                        opacity: 0;
+                    }
+                    .menuHamburguer.ativo .bar:nth-child(1){
+                        transform: translateY(8px) rotate(45deg);
+                    }
+                    .menuHamburguer.ativo .bar:nth-child(3){
+                        transform: translateY(-8px) rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+}
