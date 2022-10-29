@@ -1,0 +1,85 @@
+$color-branco: #fff;
+$color-clara01: #696969;
+$color-clara02: #424141;
+$color-clara03: #323232;
+$color-preto: #000;
+$color-fundo: #1B1B1B;
+$color-escura01: #232323;
+
+.button{
+    @include syne24;
+    background-color: $color-escura01;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+}
+
+@mixin sectionTitle{
+    font-family: 'Syne', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+@mixin dmSans32 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+}
+@mixin dmSans24 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+@mixin dmSans22 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+}
+@mixin dmSans18 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+@mixin dmSans16 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+@mixin syne32 {
+    font-family: 'Syne', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+}
+@mixin syne28 {
+    font-family: 'Syne', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+}
+@mixin syne24 {
+    font-family: 'Syne', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+@mixin syne22 {
+    font-family: 'Syne', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+}
+@mixin syne16 {
+    font-family: 'Syne', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
