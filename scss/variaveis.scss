@@ -6,15 +6,6 @@ $color-preto: #000;
 $color-fundo: #1B1B1B;
 $color-escura01: #232323;
 
-.button{
-    @include syne24;
-    background-color: $color-escura01;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px;
-}
-
 @mixin sectionTitle{
     font-family: 'Syne', sans-serif;
     font-style: normal;
@@ -82,4 +73,13 @@ $color-escura01: #232323;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+}
+
+.button{
+    @include syne24;
+    background-color: $color-escura01;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
 }
