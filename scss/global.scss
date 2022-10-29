@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Syne&display=swap');
+
+@import "./variaveis.scss";
+
+@import "./paginas/home.scss";
+
+@import "./paginas/responsivo.scss";
