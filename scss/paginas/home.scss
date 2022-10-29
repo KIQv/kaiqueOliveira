@@ -183,4 +183,77 @@ body{
             }
         }
     }
+    .portfolio{
+        width: 100%;
+        height: 593;
+        .conteudoPortfolio{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            .cards{
+                width: 100%;
+                height: 500px;
+                display: flex;
+                .card{
+                    width: 640px;
+                    height: 500px;
+                    background-color: $color-fundo;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    transition: 0.5s ease-in-out;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    .info{
+                        width: 100%;
+                        height: 100%;
+                        color: $color-branco;
+                        background-color: rgb(27 27 27 / 80%);
+                        opacity: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        z-index: 555;
+                        padding: 10px;
+                        gap: 46px;
+                        transform: translateY(30px);
+                        transition: 0.5s all;
+                        h2{
+                            @include syne32;
+                            font-size: 60px;
+                            color: transparent;
+                            -webkit-text-stroke: 0.5px white;
+                            background-color: transparent;        
+                        }
+                        p{
+                            @include dmSans24;
+                            text-align: center;
+                            background-color: transparent;
+                        }
+                        a{
+                            color: $color-branco;
+                        }
+                        a:hover{
+                            color: $color-fundo;
+                        }
+                    }
+                }
+                .card:hover .info{
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+            }
+        }
+    }
 }
