@@ -27,3 +27,9 @@ var typed = new Typed(".typed",{
     loop : true,
     loopCount : Infinity,
 });
+
+var swiper = new Swiper(".cardsSlider", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    mousewheel: true,
+  });
