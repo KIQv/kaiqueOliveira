@@ -7,7 +7,7 @@ body{
     }
     header{
         background-color: $color-fundo;
-        border-bottom: 1px solid #424141;
+        border-bottom: 1px solid $color-clara02;
         .innerWidth{
             .navBar{
                 width: 100%;
@@ -99,11 +99,11 @@ body{
                     font-size: 8.75em;
                     line-height: 168px;
                     text-transform: uppercase;
-                    color: #fff;
+                    color: $color-branco;
                     background: none;
                 }
                 h2 span{
-                    color: #000;
+                    color: $color-fundo;
                     background: none;
                 }
                 .nome{
@@ -135,19 +135,19 @@ body{
                     font-weight: 400;
                     font-size: 60px;
                     line-height: 78px;
-                    color: #000;
+                    color: $color-fundo;
                     margin-left: 30%;
                     background: none;
                     .typed{
-                        color: #fff;
+                        color: $color-branco;
                         background: none;
                     }
                     .typed2{
-                        color: #fff;
+                        color: $color-branco;
                         background: none;
                     }
                     .typed-cursor{
-                        color: #fff;
+                        color: $color-branco;
                         background: none;
                     }
                 }
@@ -178,7 +178,7 @@ body{
                     }
                 }
                 a:hover path{
-                    fill: #fff;
+                    fill: $color-branco;
                 }
             }
         }
@@ -264,9 +264,9 @@ body{
         max-height: 388px;
         width: auto;
         height: auto;
-        color: #fff;
+        color: $color-branco;
         padding: 52px 0;
-        border-bottom: 1px solid #424141;
+        border-bottom: 1px solid $color-clara02;
         .innerWidth{
             padding: 0 24px;
             .titulo{
@@ -278,7 +278,7 @@ body{
                     display: block;
                     width: 15px;
                     height: 0;
-                    border: 1px solid #FFFFFF;
+                    border: 1px solid $color-branco;
                     margin-right: 10px;
                     background-color: $color-branco;
                     transition: all 0.3s ease-in-out;
@@ -293,7 +293,7 @@ body{
                 .servicosCard{
                     min-width: 550px;
                     height: 200px;
-                    background-color: #323232;
+                    background-color: $color-clara03;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
@@ -309,7 +309,7 @@ body{
                             width: 100px;
                             height: 100px;
                             border-radius: 50%;
-                            border: 1px solid #424141;
+                            border: 1px solid $color-clara02;
                             background: none;
                             display: flex;
                             justify-content: center;
@@ -319,7 +319,7 @@ body{
                                 background: none;
                                 path{
                                     transition: 1s;
-                                    fill: #Fff;
+                                    fill: $color-branco;
                                 }
                             }
                         }
@@ -347,14 +347,125 @@ body{
                 }
                 .servicosCard:hover{
                     .servicoImg{
-                        background-color: #fff;
+                        background-color: $color-branco;
                         svg{
                             path{
-                                fill: #424141;
+                                fill: $color-clara02;
                             }
                         }
                     }
                 }
+            }
+        }
+    }
+    .sobre{
+        padding: 15px 0;
+        .innerWidth{
+            .titulo{
+                width: auto;
+                display: flex;
+                margin-bottom: 36px;
+                align-items: center;
+                .barTitle{
+                    display: block;
+                    width: 15px;
+                    height: 0;
+                    border: 1px solid $color-branco;
+                    margin-right: 10px;
+                    background-color: $color-branco;
+                    transition: all 0.3s ease-in-out;
+                }
+                h2{
+                    @include sectionTitle;
+                    color: $color-branco;
+                }
+            }
+            .info{
+                margin-bottom: 52px;
+                h3{
+                    @include syne28;
+                    color: $color-branco;
+                    text-transform: capitalize;
+                    margin-bottom: 16px
+                }
+                p{
+                    @include dmSans24;
+                    color: $color-branco;
+
+                }
+            }
+            .infoCv{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .timeline{
+                    .timelineItens{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        .timelineItem{
+                            width: 100%;
+                            margin-bottom: 42px;
+                            margin-left: 24px;
+                            .timelineDot{
+                                width: 12px;
+                                height: 12px;
+                                border-radius: 50%;
+                                background-color: $color-clara02;
+                                position: absolute;
+                                left: -4.5px;
+                            }
+                            .timelineDate{
+                                margin-top: -5px;
+                                margin-bottom: 6px;
+                                p{
+                                    color: $color-clara02;
+                                    @include syne16;
+                                }
+                            }
+                            .timelineContent{
+                                h3{
+                                    color: $color-branco;
+                                    @include syne22;
+                                    text-transform: capitalize;
+                                    margin-bottom: 6px;
+                                }
+                                p{
+                                    color: $color-branco;
+                                    @include dmSans18;
+                                    text-transform: capitalize;
+                                }
+                            }
+                        }
+                    }
+                    .timelineItens::before{
+                        content: '';
+                        position: absolute;
+                        height: 69%;
+                        background-color: $color-branco;
+                        border: 1px solid #FFFFFF;
+                    }
+                }
+                .skills{
+                    .skillsList{
+                        ul{
+                            list-style: none;
+                            li::before{
+                                content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                                color: $color-clara02; /* Change the color */
+                                font-size: 36px;
+                                font-weight: bold; /* If you want it to be bold */
+                                display: inline-block; /* Needed to add space between the bullet and the text */
+                                width: 1em; /* Also needed for space (tweak if needed) */
+                                margin-left: -1em; /* Also needed for space (tweak if needed) */
+                            }
+                        }
+                    }
+                }
+            }
+            .buttonSobre{
+                width: fit-content;
             }
         }
     }
