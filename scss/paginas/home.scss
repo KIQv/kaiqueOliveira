@@ -420,7 +420,7 @@ body{
                                 margin-top: -5px;
                                 margin-bottom: 6px;
                                 p{
-                                    color: $color-clara02;
+                                    color: $color-clara01;
                                     @include syne16;
                                 }
                             }
@@ -443,22 +443,29 @@ body{
                         content: '';
                         position: absolute;
                         height: 69%;
-                        background-color: $color-branco;
-                        border: 1px solid #FFFFFF;
+                        border: 1px solid $color-clara01;
                     }
                 }
                 .skills{
+                    width: 380px;
                     .skillsList{
                         ul{
                             list-style: none;
-                            li::before{
-                                content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-                                color: $color-clara02; /* Change the color */
-                                font-size: 36px;
-                                font-weight: bold; /* If you want it to be bold */
-                                display: inline-block; /* Needed to add space between the bullet and the text */
-                                width: 1em; /* Also needed for space (tweak if needed) */
-                                margin-left: -1em; /* Also needed for space (tweak if needed) */
+                            li{
+                                p{
+                                    @include syne22;
+                                    color: $color-branco;
+                                    margin-bottom: 10px;
+                                }
+                                p::before{
+                                    content: "";
+                                    background-color: #424141;
+                                    height: 16px;
+                                    display: inline-block;
+                                    width: 16px;
+                                    border-radius: 50%;
+                                    margin-right: 12px;
+                                }
                             }
                         }
                     }
