@@ -359,7 +359,8 @@ body{
         }
     }
     .sobre{
-        padding: 15px 0;
+        border-bottom: 1px solid $color-clara02;
+        padding: 37px 0;
         .innerWidth{
             .titulo{
                 width: auto;
@@ -473,6 +474,93 @@ body{
             }
             .buttonSobre{
                 width: fit-content;
+            }
+        }
+    }
+    .contato{
+        height: auto;
+        border-bottom: 1px solid $color-clara02;
+        padding: 37px 0;
+        .innerWidth{
+            .conteudoContato{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 128px;
+                .infoContato{
+                    min-width: 570px;
+                    .titulo{
+                        width: auto;
+                        display: flex;
+                        margin-bottom: 36px;
+                        align-items: center;
+                        .barTitle{
+                            display: block;
+                            width: 15px;
+                            height: 0;
+                            border: 1px solid $color-branco;
+                            margin-right: 10px;
+                            background-color: $color-branco;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        h2{
+                            @include sectionTitle;
+                            color: $color-branco;
+                        }
+                    }
+                    .conteudoInfo{
+                        p{
+                            max-width: 570px;
+                            @include dmSans24;
+                            color: $color-branco;
+                            margin-bottom: 16px
+                        }
+                        #contatoInfo{
+                            @include dmSans22;
+                        }
+                    }
+                }
+                .formContato{
+                    min-width: 454px;
+                    min-height: 255px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    form{
+                        width: 100%;
+                        height: auto;
+                        background-color: $color-clara03;
+                        padding: 32px;
+                        input{
+                            width: 100%;
+                            height: 27px;
+                            @include dmSans16;
+                            background-color: transparent;
+                            border: none;
+                            border-bottom: 1px solid $color-clara01;
+                            margin-bottom: 24px;
+                            color: $color-clara01;
+                            outline: none;
+                        }
+                        textarea{
+                            width: 100%;
+                            height: 27px;
+                            @include dmSans16;
+                            background-color: transparent;
+                            border: none;
+                            border-bottom: 1px solid $color-clara01;
+                            margin-bottom: 24px;
+                            color: $color-clara01;
+                            outline: none;
+                            resize: none;
+                        }
+                        .button{
+                            @include syne16;
+                            padding: 6px 22px;
+                        }
+                    }
+                }
             }
         }
     }

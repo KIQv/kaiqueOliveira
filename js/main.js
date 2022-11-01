@@ -32,4 +32,12 @@ var swiper = new Swiper(".cardsSlider", {
     slidesPerView: 3,
     spaceBetween: 0,
     mousewheel: true,
-  });
+});
+
+const mensagem = document.getElementById("mensagem");
+mensagem.style.cssText = `height: ${mensagem.scrollHeight}px; overflow-y:hidden`;
+mensagem.addEventListener("keyup", e =>{
+    mensagem.style.height = "24px";
+    let scHeight = e.target.scrollHeight;
+    mensagem.style.height = `${scHeight}px`;
+});
