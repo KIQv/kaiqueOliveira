@@ -34,10 +34,47 @@ var swiper = new Swiper(".cardsSlider", {
     mousewheel: true,
 });
 
-const mensagem = document.getElementById("mensagem");
+const mensagem = document.getElementById("mensagemForm");
 mensagem.style.cssText = `height: ${mensagem.scrollHeight}px; overflow-y:hidden`;
 mensagem.addEventListener("keyup", e =>{
     mensagem.style.height = "24px";
     let scHeight = e.target.scrollHeight;
     mensagem.style.height = `${scHeight}px`;
 });
+
+
+function enviarEmail(){
+    var params = {
+        nomeContato: document.getElementById("nomeForm").value,
+        emailContato: document.getElementById("emailForm").value,
+        mensagemContato: document.getElementById("mensagemForm").value,
+    };
+
+
+    if(nomeForm.value === '' || emailForm.value === '' || mensagemForm.value === ''){
+        erro.style.display = "block";
+    }else{
+        const serviceID = "service_ex3qosv";
+        const templateID = "template_zwmy3tl";
+
+        emailjs
+        .send(serviceID,templateID,params)
+        .then((res) =>{
+            sucesso.style.display = "block";
+        })
+        .catch((err) => erro.style.display = "block");
+        sucesso.style.display = "block";
+
+        setTimeout(() =>{
+            nomeForm.value = '';
+            emailForm.value = '';
+            mensagemForm.value = '';
+        }, 2000);
+    }
+
+    setTimeout(() =>{
+        erro.style.display = 'none';
+        sucesso.style.display = 'none';
+    }, 4000);
+};
+

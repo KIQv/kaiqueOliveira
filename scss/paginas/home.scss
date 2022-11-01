@@ -85,479 +85,552 @@ body{
             }
         }
     }
-    .home{
-        height: 980px;
-        .innerWidth{
-            .banner{
-                height: 500px;
-                margin-top: 240px;
-                margin-bottom: 240px;
-                h2{
-                    font-family: 'Syne';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 8.75em;
-                    line-height: 168px;
-                    text-transform: uppercase;
-                    color: $color-branco;
-                    background: none;
-                }
-                h2 span{
-                    color: $color-fundo;
-                    background: none;
-                }
-                .nome{
-                    margin-left: 335px;
-                    margin-top: -470px;
-                }
-                #nome2{
-                    z-index: -1;
-                    margin-top: -110px;
-                    color: transparent;
-                    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.2);
-                }
-                #nome2 span{
-                    color: transparent;
-                    -webkit-text-stroke: 0.5px rgba(27, 27, 27, 0.2);
-                }
-                #nome3{
-                    margin-top: -105px;
-                    color: transparent;
-                    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.05);
-                }
-                #nome3 span{
-                    color: transparent;
-                    -webkit-text-stroke: 0.5px rgba(27, 27, 27, 0.1);
-                }
-                .textHome{
-                    font-family: 'DM Sans';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 60px;
-                    line-height: 78px;
-                    color: $color-fundo;
-                    margin-left: 30%;
-                    background: none;
-                    .typed{
+    main{
+        .home{
+            height: 980px;
+            .innerWidth{
+                .banner{
+                    height: 500px;
+                    margin-top: 240px;
+                    margin-bottom: 240px;
+                    h2{
+                        font-family: 'Syne';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 8.75em;
+                        line-height: 168px;
+                        text-transform: uppercase;
                         color: $color-branco;
                         background: none;
                     }
-                    .typed2{
-                        color: $color-branco;
+                    h2 span{
+                        color: $color-fundo;
                         background: none;
                     }
-                    .typed-cursor{
-                        color: $color-branco;
+                    .nome{
+                        margin-left: 335px;
+                        margin-top: -470px;
+                    }
+                    #nome2{
+                        z-index: -1;
+                        margin-top: -110px;
+                        color: transparent;
+                        -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.2);
+                    }
+                    #nome2 span{
+                        color: transparent;
+                        -webkit-text-stroke: 0.5px rgba(27, 27, 27, 0.2);
+                    }
+                    #nome3{
+                        margin-top: -105px;
+                        color: transparent;
+                        -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.05);
+                    }
+                    #nome3 span{
+                        color: transparent;
+                        -webkit-text-stroke: 0.5px rgba(27, 27, 27, 0.1);
+                    }
+                    .textHome{
+                        font-family: 'DM Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 60px;
+                        line-height: 78px;
+                        color: $color-fundo;
+                        margin-left: 30%;
+                        background: none;
+                        .typed{
+                            color: $color-branco;
+                            background: none;
+                        }
+                        .typed2{
+                            color: $color-branco;
+                            background: none;
+                        }
+                        .typed-cursor{
+                            color: $color-branco;
+                            background: none;
+                        }
+                    }
+                    .textHome span{
                         background: none;
                     }
                 }
-                .textHome span{
-                    background: none;
+                .redesSociais{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0px;
+                    gap: 16px;
+                    margin-top: -50%;
+                    float: right;
+                    a{
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all 1s;
+                        .icon{
+                            width: 40px;
+                            height: 40px;
+                            path{
+                                transition: all 1s;
+                            }
+                        }
+                    }
+                    a:hover path{
+                        fill: $color-branco;
+                    }
                 }
             }
-            .redesSociais{
+        }
+        .portfolio{
+            width: 100%;
+            height: 593px;
+            overflow: hidden;
+            .conteudoPortfolio{
+                width: 100%;
+                height: auto;
                 display: flex;
                 flex-direction: column;
-                padding: 0px;
-                gap: 16px;
-                margin-top: -50%;
-                float: right;
-                a{
-                    width: 50px;
-                    height: 50px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    transition: all 1s;
-                    .icon{
-                        width: 40px;
-                        height: 40px;
-                        path{
-                            transition: all 1s;
+                align-items: center;
+                .cardsSlider{
+                    width: 100%;
+                    .cards{
+                        width: 100%;
+                        height: 500px;
+                        display: flex;
+                        margin-bottom: 32px;
+                        .card{
+                            width: 100%;
+                            height: 500px;
+                            background-color: $color-fundo;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            transition: 0.5s ease-in-out;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                            }
+                            .info{
+                                width: 100%;
+                                height: 100%;
+                                color: $color-branco;
+                                background-color: rgb(27 27 27 / 80%);
+                                opacity: 0;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+                                z-index: 555;
+                                padding: 10px;
+                                gap: 46px;
+                                transform: translateY(30px);
+                                transition: 0.5s all;
+                                h2{
+                                    @include syne32;
+                                    font-size: 60px;
+                                    color: transparent;
+                                    -webkit-text-stroke: 0.5px white;
+                                    background-color: transparent;        
+                                }
+                                p{
+                                    @include dmSans24;
+                                    text-align: center;
+                                    background-color: transparent;
+                                }
+                                a{
+                                    color: $color-branco;
+                                }
+                                a:hover{
+                                    color: $color-fundo;
+                                }
+                            }
+                        }
+                        .card:hover .info{
+                            opacity: 1;
+                            transform: translateY(0px);
                         }
                     }
                 }
-                a:hover path{
-                    fill: $color-branco;
+            }
+        }
+        .servicos{
+            max-height: 388px;
+            width: auto;
+            height: auto;
+            color: $color-branco;
+            padding: 52px 0;
+            border-bottom: 1px solid $color-clara02;
+            .innerWidth{
+                padding: 0 24px;
+                .titulo{
+                    width: auto;
+                    display: flex;
+                    margin-bottom: 36px;
+                    align-items: center;
+                    .barTitle{
+                        display: block;
+                        width: 15px;
+                        height: 0;
+                        border: 1px solid $color-branco;
+                        margin-right: 10px;
+                        background-color: $color-branco;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    h2{
+                        @include sectionTitle;
+                    }
+                }
+                .conteudoServicos{
+                    display: flex;
+                    justify-content: space-between;
+                    .servicosCard{
+                        min-width: 550px;
+                        height: 200px;
+                        background-color: $color-clara03;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 50px 24px;
+                        gap: 14px;
+                        transition: 1s;
+                        .cardAssets{
+                            display: flex;
+                            align-items: center;
+                            gap: 24px;
+                            background: none;
+                            .servicoImg{
+                                width: 100px;
+                                height: 100px;
+                                border-radius: 50%;
+                                border: 1px solid $color-clara02;
+                                background: none;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transition: 1s;
+                                svg{
+                                    background: none;
+                                    path{
+                                        transition: 1s;
+                                        fill: $color-branco;
+                                    }
+                                }
+                            }
+                            .cardConteudo{
+                                background: transparent;
+                                h3{
+                                    @include dmSans32;
+                                    background: none;
+                                }
+                            }
+                        }
+                        .servicoNum{
+                            background: none;
+                            h2{
+                                font-family: 'DM Sans';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 70px;
+                                line-height: 91px;
+                                color: transparent;
+                                -webkit-text-stroke: 0.5px #5a5a5a;
+                                background: none;
+                            }
+                        }
+                    }
+                    .servicosCard:hover{
+                        .servicoImg{
+                            background-color: $color-branco;
+                            svg{
+                                path{
+                                    fill: $color-clara02;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sobre{
+            border-bottom: 1px solid $color-clara02;
+            padding: 37px 0;
+            .innerWidth{
+                .titulo{
+                    width: auto;
+                    display: flex;
+                    margin-bottom: 36px;
+                    align-items: center;
+                    .barTitle{
+                        display: block;
+                        width: 15px;
+                        height: 0;
+                        border: 1px solid $color-branco;
+                        margin-right: 10px;
+                        background-color: $color-branco;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    h2{
+                        @include sectionTitle;
+                        color: $color-branco;
+                    }
+                }
+                .info{
+                    margin-bottom: 52px;
+                    h3{
+                        @include syne28;
+                        color: $color-branco;
+                        text-transform: capitalize;
+                        margin-bottom: 16px
+                    }
+                    p{
+                        @include dmSans24;
+                        color: $color-branco;
+    
+                    }
+                }
+                .infoCv{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .timeline{
+                        .timelineItens{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            position: relative;
+                            .timelineItem{
+                                width: 100%;
+                                margin-bottom: 42px;
+                                margin-left: 24px;
+                                .timelineDot{
+                                    width: 12px;
+                                    height: 12px;
+                                    border-radius: 50%;
+                                    background-color: $color-clara02;
+                                    position: absolute;
+                                    left: -4.5px;
+                                }
+                                .timelineDate{
+                                    margin-top: -5px;
+                                    margin-bottom: 6px;
+                                    p{
+                                        color: $color-clara01;
+                                        @include syne16;
+                                    }
+                                }
+                                .timelineContent{
+                                    h3{
+                                        color: $color-branco;
+                                        @include syne22;
+                                        text-transform: capitalize;
+                                        margin-bottom: 6px;
+                                    }
+                                    p{
+                                        color: $color-branco;
+                                        @include dmSans18;
+                                        text-transform: capitalize;
+                                    }
+                                }
+                            }
+                        }
+                        .timelineItens::before{
+                            content: '';
+                            position: absolute;
+                            height: 69%;
+                            border: 1px solid $color-clara01;
+                        }
+                    }
+                    .skills{
+                        width: 380px;
+                        .skillsList{
+                            ul{
+                                list-style: none;
+                                li{
+                                    p{
+                                        @include syne22;
+                                        color: $color-branco;
+                                        margin-bottom: 10px;
+                                    }
+                                    p::before{
+                                        content: "";
+                                        background-color: #424141;
+                                        height: 16px;
+                                        display: inline-block;
+                                        width: 16px;
+                                        border-radius: 50%;
+                                        margin-right: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .buttonSobre{
+                    width: fit-content;
+                }
+            }
+        }
+        .contato{
+            height: auto;
+            border-bottom: 1px solid $color-clara02;
+            padding: 37px 0;
+            .innerWidth{
+                .conteudoContato{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 128px;
+                    .infoContato{
+                        min-width: 570px;
+                        .titulo{
+                            width: auto;
+                            display: flex;
+                            margin-bottom: 36px;
+                            align-items: center;
+                            .barTitle{
+                                display: block;
+                                width: 15px;
+                                height: 0;
+                                border: 1px solid $color-branco;
+                                margin-right: 10px;
+                                background-color: $color-branco;
+                                transition: all 0.3s ease-in-out;
+                            }
+                            h2{
+                                @include sectionTitle;
+                                color: $color-branco;
+                            }
+                        }
+                        .conteudoInfo{
+                            p{
+                                max-width: 570px;
+                                @include dmSans24;
+                                color: $color-branco;
+                                margin-bottom: 16px
+                            }
+                            #contatoInfo{
+                                @include dmSans22;
+                            }
+                        }
+                    }
+                    .formContato{
+                        min-width: 454px;
+                        min-height: 255px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        form{
+                            width: 100%;
+                            height: auto;
+                            background-color: $color-clara03;
+                            padding: 32px 32px 0;
+                            input{
+                                width: 100%;
+                                height: 27px;
+                                @include dmSans16;
+                                background-color: transparent;
+                                border: none;
+                                border-bottom: 1px solid $color-clara01;
+                                margin-bottom: 24px;
+                                color: $color-clara01;
+                                outline: none;
+                            }
+                            textarea{
+                                width: 100%;
+                                height: 27px;
+                                @include dmSans16;
+                                background-color: transparent;
+                                border: none;
+                                border-bottom: 1px solid $color-clara01;
+                                margin-bottom: 24px;
+                                color: $color-clara01;
+                                outline: none;
+                                resize: none;
+                            }
+                            .button{
+                                @include syne16;
+                                padding: 6px 22px;
+                                margin-bottom: 32px;
+                            }
+                            .alerta{
+                                background-color: transparent;
+                                .sucesso{
+                                    background-color: transparent;
+                                    @include dmSans16;
+                                    color: #40FF6A;
+                                    display: none;
+                                    margin-bottom: 32px;
+                                }
+                                .erro{
+                                    background-color: transparent;
+                                    @include dmSans16;
+                                    color: #FF4040;
+                                    display: none;
+                                    margin-bottom: 32px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-    .portfolio{
-        width: 100%;
-        height: 593px;
-        overflow: hidden;
-        .conteudoPortfolio{
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .cardsSlider{
-                width: 100%;
-                .cards{
-                    width: 100%;
-                    height: 500px;
+    footer{
+        .rodape{
+            padding: 89px 0 37px;
+            .innerWidth{
+                .conteudoRodape{
                     display: flex;
-                    margin-bottom: 32px;
-                    .card{
-                        width: 100%;
-                        height: 500px;
-                        background-color: $color-fundo;
-                        position: relative;
-                        display: flex;
-                        align-items: center;
-                        transition: 0.5s ease-in-out;
-                        img{
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 80px;
+                    .logoRodape{
+                        svg{
+                            width: 70px;
+                            height: 80px;
                         }
-                        .info{
-                            width: 100%;
-                            height: 100%;
-                            color: $color-branco;
-                            background-color: rgb(27 27 27 / 80%);
-                            opacity: 0;
+                    }
+                    .redesSociais{
+                        display: flex;
+                        padding: 0px;
+                        gap: 16px;
+                        a{
+                            width: 50px;
+                            height: 50px;
                             display: flex;
-                            flex-direction: column;
-                            align-items: center;
                             justify-content: center;
-                            position: relative;
-                            z-index: 555;
-                            padding: 10px;
-                            gap: 46px;
-                            transform: translateY(30px);
-                            transition: 0.5s all;
-                            h2{
-                                @include syne32;
-                                font-size: 60px;
-                                color: transparent;
-                                -webkit-text-stroke: 0.5px white;
-                                background-color: transparent;        
+                            align-items: center;
+                            transition: all 1s;
+                            .icon{
+                                width: 40px;
+                                height: 40px;
+                                path{
+                                    transition: all 1s;
+                                }
                             }
-                            p{
-                                @include dmSans24;
-                                text-align: center;
-                                background-color: transparent;
-                            }
+                        }
+                        a:hover path{
+                            fill: $color-branco;
+                        }
+                    }
+                    .direitos{
+                        p{
+                            @include syne16;
+                            color: $color-branco;
+                            border-bottom: 1px solid #424141;
+                            padding-bottom: 10px;
                             a{
                                 color: $color-branco;
                             }
-                            a:hover{
-                                color: $color-fundo;
-                            }
-                        }
-                    }
-                    .card:hover .info{
-                        opacity: 1;
-                        transform: translateY(0px);
-                    }
-                }
-            }
-        }
-    }
-    .servicos{
-        max-height: 388px;
-        width: auto;
-        height: auto;
-        color: $color-branco;
-        padding: 52px 0;
-        border-bottom: 1px solid $color-clara02;
-        .innerWidth{
-            padding: 0 24px;
-            .titulo{
-                width: auto;
-                display: flex;
-                margin-bottom: 36px;
-                align-items: center;
-                .barTitle{
-                    display: block;
-                    width: 15px;
-                    height: 0;
-                    border: 1px solid $color-branco;
-                    margin-right: 10px;
-                    background-color: $color-branco;
-                    transition: all 0.3s ease-in-out;
-                }
-                h2{
-                    @include sectionTitle;
-                }
-            }
-            .conteudoServicos{
-                display: flex;
-                justify-content: space-between;
-                .servicosCard{
-                    min-width: 550px;
-                    height: 200px;
-                    background-color: $color-clara03;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 50px 24px;
-                    gap: 14px;
-                    transition: 1s;
-                    .cardAssets{
-                        display: flex;
-                        align-items: center;
-                        gap: 24px;
-                        background: none;
-                        .servicoImg{
-                            width: 100px;
-                            height: 100px;
-                            border-radius: 50%;
-                            border: 1px solid $color-clara02;
-                            background: none;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            transition: 1s;
-                            svg{
-                                background: none;
-                                path{
-                                    transition: 1s;
-                                    fill: $color-branco;
-                                }
-                            }
-                        }
-                        .cardConteudo{
-                            background: transparent;
-                            h3{
-                                @include dmSans32;
-                                background: none;
-                            }
-                        }
-                    }
-                    .servicoNum{
-                        background: none;
-                        h2{
-                            font-family: 'DM Sans';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 70px;
-                            line-height: 91px;
-                            color: transparent;
-                            -webkit-text-stroke: 0.5px #5a5a5a;
-                            background: none;
-                        }
-                    }
-                }
-                .servicosCard:hover{
-                    .servicoImg{
-                        background-color: $color-branco;
-                        svg{
-                            path{
-                                fill: $color-clara02;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .sobre{
-        border-bottom: 1px solid $color-clara02;
-        padding: 37px 0;
-        .innerWidth{
-            .titulo{
-                width: auto;
-                display: flex;
-                margin-bottom: 36px;
-                align-items: center;
-                .barTitle{
-                    display: block;
-                    width: 15px;
-                    height: 0;
-                    border: 1px solid $color-branco;
-                    margin-right: 10px;
-                    background-color: $color-branco;
-                    transition: all 0.3s ease-in-out;
-                }
-                h2{
-                    @include sectionTitle;
-                    color: $color-branco;
-                }
-            }
-            .info{
-                margin-bottom: 52px;
-                h3{
-                    @include syne28;
-                    color: $color-branco;
-                    text-transform: capitalize;
-                    margin-bottom: 16px
-                }
-                p{
-                    @include dmSans24;
-                    color: $color-branco;
-
-                }
-            }
-            .infoCv{
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                .timeline{
-                    .timelineItens{
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        position: relative;
-                        .timelineItem{
-                            width: 100%;
-                            margin-bottom: 42px;
-                            margin-left: 24px;
-                            .timelineDot{
-                                width: 12px;
-                                height: 12px;
-                                border-radius: 50%;
-                                background-color: $color-clara02;
-                                position: absolute;
-                                left: -4.5px;
-                            }
-                            .timelineDate{
-                                margin-top: -5px;
-                                margin-bottom: 6px;
-                                p{
-                                    color: $color-clara01;
-                                    @include syne16;
-                                }
-                            }
-                            .timelineContent{
-                                h3{
-                                    color: $color-branco;
-                                    @include syne22;
-                                    text-transform: capitalize;
-                                    margin-bottom: 6px;
-                                }
-                                p{
-                                    color: $color-branco;
-                                    @include dmSans18;
-                                    text-transform: capitalize;
-                                }
-                            }
-                        }
-                    }
-                    .timelineItens::before{
-                        content: '';
-                        position: absolute;
-                        height: 69%;
-                        border: 1px solid $color-clara01;
-                    }
-                }
-                .skills{
-                    width: 380px;
-                    .skillsList{
-                        ul{
-                            list-style: none;
-                            li{
-                                p{
-                                    @include syne22;
-                                    color: $color-branco;
-                                    margin-bottom: 10px;
-                                }
-                                p::before{
-                                    content: "";
-                                    background-color: #424141;
-                                    height: 16px;
-                                    display: inline-block;
-                                    width: 16px;
-                                    border-radius: 50%;
-                                    margin-right: 12px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .buttonSobre{
-                width: fit-content;
-            }
-        }
-    }
-    .contato{
-        height: auto;
-        border-bottom: 1px solid $color-clara02;
-        padding: 37px 0;
-        .innerWidth{
-            .conteudoContato{
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 128px;
-                .infoContato{
-                    min-width: 570px;
-                    .titulo{
-                        width: auto;
-                        display: flex;
-                        margin-bottom: 36px;
-                        align-items: center;
-                        .barTitle{
-                            display: block;
-                            width: 15px;
-                            height: 0;
-                            border: 1px solid $color-branco;
-                            margin-right: 10px;
-                            background-color: $color-branco;
-                            transition: all 0.3s ease-in-out;
-                        }
-                        h2{
-                            @include sectionTitle;
-                            color: $color-branco;
-                        }
-                    }
-                    .conteudoInfo{
-                        p{
-                            max-width: 570px;
-                            @include dmSans24;
-                            color: $color-branco;
-                            margin-bottom: 16px
-                        }
-                        #contatoInfo{
-                            @include dmSans22;
-                        }
-                    }
-                }
-                .formContato{
-                    min-width: 454px;
-                    min-height: 255px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    form{
-                        width: 100%;
-                        height: auto;
-                        background-color: $color-clara03;
-                        padding: 32px;
-                        input{
-                            width: 100%;
-                            height: 27px;
-                            @include dmSans16;
-                            background-color: transparent;
-                            border: none;
-                            border-bottom: 1px solid $color-clara01;
-                            margin-bottom: 24px;
-                            color: $color-clara01;
-                            outline: none;
-                        }
-                        textarea{
-                            width: 100%;
-                            height: 27px;
-                            @include dmSans16;
-                            background-color: transparent;
-                            border: none;
-                            border-bottom: 1px solid $color-clara01;
-                            margin-bottom: 24px;
-                            color: $color-clara01;
-                            outline: none;
-                            resize: none;
-                        }
-                        .button{
-                            @include syne16;
-                            padding: 6px 22px;
                         }
                     }
                 }
