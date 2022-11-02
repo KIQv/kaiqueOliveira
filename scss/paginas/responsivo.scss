@@ -1,3 +1,15 @@
+@media (max-width: 1024px){
+    body{
+        .innerWidth{
+            max-width: 976px;
+            width: 976px;
+            padding: 15px 32px;
+        }
+        main{
+            
+        }
+    }
+}
 @media (max-width: 425px){
     body{
         .innerWidth{
@@ -62,6 +74,9 @@
                     }
                 }
             }
+        }
+        main{
+
         }
     }
 }
