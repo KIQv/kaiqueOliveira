@@ -1,4 +1,4 @@
-# Portfólio - Kaique Oliveira
+# Meu Portfólio - Kaique Oliveira
 
 - "O meu próprio portfolio", finalmente posso dizer isso é um projeto simples? sim, porém eu estou bastante feliz com o resultado final, esse projeto já passou por tantas modificações tanto em design quanto em código e finalmente consegui um resultado que me agradou bastante.
 
