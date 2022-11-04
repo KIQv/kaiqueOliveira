@@ -60,7 +60,6 @@ body{
                             font-style: normal;
                             font-weight: 400;
                             font-size: 16px;
-                            line-height: 19px;
                             text-transform: capitalize;
                             color: $color-branco;
                         }
@@ -99,7 +98,6 @@ body{
                         font-style: normal;
                         font-weight: 400;
                         font-size: 8.75em;
-                        line-height: 168px;
                         text-transform: uppercase;
                         color: $color-branco;
                         background: none;
@@ -136,7 +134,6 @@ body{
                         font-style: normal;
                         font-weight: 400;
                         font-size: 60px;
-                        line-height: 78px;
                         color: $color-fundo;
                         margin-left: 30%;
                         background: none;
@@ -290,9 +287,9 @@ body{
                 }
                 .conteudoServicos{
                     display: flex;
-                    justify-content: space-between;
+                    gap: 32px;
                     .servicosCard{
-                        min-width: 550px;
+                        width: 100%;
                         height: 200px;
                         background-color: $color-clara03;
                         display: flex;
@@ -339,7 +336,6 @@ body{
                                 font-style: normal;
                                 font-weight: 400;
                                 font-size: 70px;
-                                line-height: 91px;
                                 color: transparent;
                                 -webkit-text-stroke: 0.5px #5a5a5a;
                                 background: none;
