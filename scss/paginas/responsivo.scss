@@ -3,10 +3,54 @@
         .innerWidth{
             max-width: 976px;
             width: 976px;
-            padding: 15px 32px;
         }
         main{
-            
+            .home{
+                height: auto;
+                padding: 124px 32px;
+                .innerWidth{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0px 24px;
+                    .banner{
+                        margin-top: 0;
+                        margin-bottom: 62px;
+                    }
+                    .redesSociais{
+                        flex-direction: unset;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            .servicos{
+                .innerWidth{
+                    .conteudoServicos{
+                        .servicosCard{
+                            min-width: 450px;
+                            padding: 50px 20px;
+                            .servicoNum{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .contato{
+                .innerWidth{
+                    .conteudoContato{
+                        flex-direction: column;
+                        align-items: unset;
+                        gap: 62px;
+                        .infoContato{
+                            .conteudoInfo{
+                                p{
+                                    max-width: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
