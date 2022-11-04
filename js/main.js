@@ -35,7 +35,7 @@ var swiper = new Swiper(".cardsSlider", {
     breakpoints: {
         768: {
           slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 0,
         },
         1024: {
           slidesPerView: 2,

@@ -57,10 +57,67 @@
 @media (max-width: 768px){
     body{
         .innerWidth{
-
+            padding: 0 24px;
+            max-width: 704px;
+            width: 704px;
         }
         main{
-            
+            .home{
+                padding: 52px 32px;
+                .innerWidth{
+                    .banner{
+                        height: auto;
+                        display: flex;
+                        flex-direction: column-reverse;
+                        gap: 18px;
+                        img{
+                            width: 657px;
+                            height: 782px;      
+                        }
+                        .nome{
+                            margin: 0;
+                            h2{
+                                span{
+                                    color: $color-branco;
+                                }
+                            }
+                        }
+                        #nome2{
+                            display: none;
+                        }
+                        #nome3{
+                            display: none;
+                        }
+                        .textHome{
+                            color: $color-branco;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .servicos{
+                .innerWidth{
+                    .conteudoServicos{
+                        gap: 40px;
+                        flex-direction: column;
+                        .servicosCard{
+                            padding: 27px;
+                            .servicoNum{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            .sobre{
+                .innerWidth{
+                    .infoCv{
+                        .skills{
+                            width: auto;
+                        }
+                    }
+                }
+            }
         }
     }
 }
