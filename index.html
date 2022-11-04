@@ -16,10 +16,6 @@
     <!-- SwiperJS biblioteca para carrosseis-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
-    <!-- EmailJS biblioteca para receber emails atráves do site-->
-    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">(function(){emailjs.init("Jt33Pe9uMHI69wAUA");})();</script>
-
     <!-- Meu CSS/estilo -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -267,7 +263,7 @@
                             <input data-aos="fade-up" data-aos-duration="600" type="text" name="name" id="nomeForm" placeholder="Nome:" autocomplete="off" required>
                             <input data-aos="fade-up" data-aos-duration="600" type="email" name="email" id="emailForm" placeholder="E-mail:" autocomplete="off" required>
                             <textarea data-aos="fade-up" data-aos-duration="600" name="message" id="mensagemForm" cols="30" rows="10" placeholder="Mensagem:" autocomplete="off" required></textarea>
-                            <button data-aos="fade-up" data-aos-duration="600" class="button" type="submit" onclick="enviarEmail()">ENVIAR</button>
+                            <button data-aos="fade-up" data-aos-duration="600" class="button" type="button" onclick="enviarEmail()">ENVIAR</button>
                             <div class="alerta" data-aos="fade-up" data-aos-duration="600">
                                 <p class="sucesso" id="sucesso">Sua mensagem foi enviada com sucesso!</p>
                                 <p class="erro" id="erro">Sua mensagem não foi enviada :(<br>Verifique se preencheu tudo corretamente!</p>
@@ -325,6 +321,9 @@
     <div class="cursor2"></div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- EmailJS biblioteca para receber emails atráves do site-->
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">(function(){emailjs.init("Jt33Pe9uMHI69wAUA");})();</script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
