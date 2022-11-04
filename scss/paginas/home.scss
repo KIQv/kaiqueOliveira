@@ -6,6 +6,7 @@ body{
         margin: auto;
     }
     header{
+        z-index: 999;
         background-color: $color-fundo;
         border-bottom: 1px solid $color-clara02;
         .innerWidth{
@@ -362,10 +363,12 @@ body{
             border-bottom: 1px solid $color-clara02;
             padding: 37px 0;
             .innerWidth{
+                display: flex;
+                flex-direction: column;
+                gap: 52px;
                 .titulo{
                     width: auto;
                     display: flex;
-                    margin-bottom: 36px;
                     align-items: center;
                     .barTitle{
                         display: block;
@@ -382,7 +385,6 @@ body{
                     }
                 }
                 .info{
-                    margin-bottom: 52px;
                     h3{
                         @include syne28;
                         color: $color-branco;

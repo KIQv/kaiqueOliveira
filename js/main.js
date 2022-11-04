@@ -33,6 +33,10 @@ var swiper = new Swiper(".cardsSlider", {
     spaceBetween: 0,
     mousewheel: true,
     breakpoints: {
+        425: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
         768: {
           slidesPerView: 1,
           spaceBetween: 0,

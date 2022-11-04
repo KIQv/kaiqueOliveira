@@ -124,8 +124,8 @@
 @media (max-width: 425px){
     body{
         .innerWidth{
-            max-width: 377px;
-            width: 377px;
+            max-width: 425px;
+            width: 425px;
             padding: 15px 24px;
             margin: auto;
         }
@@ -187,7 +187,101 @@
             }
         }
         main{
-
+            .home{
+                padding: 0px;
+                padding-top: 112px;
+                .innerWidth{
+                    padding: 52px 24px;
+                    .banner{
+                        img{
+                            width: 377px;
+                            height: 449px;    
+                        }
+                        .nome{
+                            h2{
+                                font-size: 100px;
+                            }
+                        }
+                        .textHome{
+                            font-size: 32px;
+                        }
+                    }
+                }
+            }
+            .servicos{
+                .innerWidth{
+                    .conteudoServicos{
+                        .servicosCard{
+                            width: 100%;
+                            min-width: unset;
+                            padding: 27px 17px;
+                            .cardAssets{
+                                .cardConteudo{
+                                    h3{
+                                        font-size: 24px;
+                                    }
+                                }
+                            }
+                            .servicoNum{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .sobre{
+                .innerWidth{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 52px;
+                    .info{
+                        h3{
+                            @include syne24;
+                        }
+                        p{
+                            @include dmSans22
+                        }
+                    }
+                    .infoCv{
+                        flex-direction: column;
+                    }
+                }
+            }
+            .contato{
+                .innerWidth{
+                    .conteudoContato{
+                        .infoContato{
+                            min-width: unset;
+                            width: 100%;
+                            .conteudoInfo{
+                                p{
+                                    @include dmSans22;
+                                }
+                                #contatoInfo{
+                                    @include dmSans18;
+                                }
+                            }
+                        }
+                        .formContato{
+                            min-width: unset;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            .rodape{
+                .innerWidth{
+                    .conteudoRodape{
+                        .direitos{
+                            p{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
