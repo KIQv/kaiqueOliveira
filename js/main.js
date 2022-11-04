@@ -32,6 +32,20 @@ var swiper = new Swiper(".cardsSlider", {
     slidesPerView: 3,
     spaceBetween: 0,
     mousewheel: true,
+    breakpoints: {
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        1440: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+      },
 });
 
 const mensagem = document.getElementById("mensagemForm");
