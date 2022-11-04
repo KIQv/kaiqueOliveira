@@ -1,4 +1,7 @@
 body{
+    hr{
+        border: 1px solid $color-clara02;
+    }
     .innerWidth{
         max-width: 1200px;
         width: 1200px;
@@ -6,9 +9,11 @@ body{
         margin: auto;
     }
     header{
-        z-index: 999;
+        width: 100%;
         background-color: $color-fundo;
         border-bottom: 1px solid $color-clara02;
+        z-index: 999;
+        position: fixed;
         .innerWidth{
             .navBar{
                 width: 100%;
@@ -264,7 +269,6 @@ body{
             height: auto;
             color: $color-branco;
             padding: 52px 0;
-            border-bottom: 1px solid $color-clara02;
             .innerWidth{
                 padding: 0 24px;
                 .titulo{
@@ -356,7 +360,6 @@ body{
             }
         }
         .sobre{
-            border-bottom: 1px solid $color-clara02;
             padding: 37px 0;
             .innerWidth{
                 display: flex;
@@ -413,7 +416,7 @@ body{
                                     border-radius: 50%;
                                     background-color: $color-clara02;
                                     position: absolute;
-                                    left: -4.5px;
+                                    left: -9.5%;
                                 }
                                 .timelineDate{
                                     margin-top: -5px;
@@ -477,7 +480,6 @@ body{
         }
         .contato{
             height: auto;
-            border-bottom: 1px solid $color-clara02;
             padding: 37px 0;
             .innerWidth{
                 .conteudoContato{
