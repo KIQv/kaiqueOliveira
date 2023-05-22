@@ -33,7 +33,7 @@ var typed = new Typed(".typed",{
 var swiper = new Swiper(".cardsSlider", {
     slidesPerView: 3,
     spaceBetween: 0,
-    mousewheel: true,
+    mousewheel: false,
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -52,7 +52,7 @@ var swiper = new Swiper(".cardsSlider", {
           spaceBetween: 0,
         },
         1024: {
-          slidesPerView: 2,
+          slidesPerView: 3,
           spaceBetween: 0,
         },
         1440: {
