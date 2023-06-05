@@ -272,22 +272,7 @@ body{
             .innerWidth{
                 padding: 0 24px;
                 .titulo{
-                    width: auto;
-                    display: flex;
-                    margin-bottom: 36px;
-                    align-items: center;
-                    .barTitle{
-                        display: block;
-                        width: 15px;
-                        height: 0;
-                        border: 1px solid $color-branco;
-                        margin-right: 10px;
-                        background-color: $color-branco;
-                        transition: all 0.3s ease-in-out;
-                    }
-                    h2{
-                        @include sectionTitle;
-                    }
+                    @include titulo;
                 }
                 .conteudoServicos{
                     display: flex;
@@ -366,23 +351,7 @@ body{
                 flex-direction: column;
                 gap: 52px;
                 .titulo{
-                    width: auto;
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 36px;
-                    .barTitle{
-                        display: block;
-                        width: 15px;
-                        height: 0;
-                        border: 1px solid $color-branco;
-                        margin-right: 10px;
-                        background-color: $color-branco;
-                        transition: all 0.3s ease-in-out;
-                    }
-                    h2{
-                        @include sectionTitle;
-                        color: $color-branco;
-                    }
+                    @include titulo;
                 }
                 .info{
                     h3{
@@ -492,23 +461,7 @@ body{
                     .infoContato{
                         min-width: 570px;
                         .titulo{
-                            width: auto;
-                            display: flex;
-                            margin-bottom: 36px;
-                            align-items: center;
-                            .barTitle{
-                                display: block;
-                                width: 15px;
-                                height: 0;
-                                border: 1px solid $color-branco;
-                                margin-right: 10px;
-                                background-color: $color-branco;
-                                transition: all 0.3s ease-in-out;
-                            }
-                            h2{
-                                @include sectionTitle;
-                                color: $color-branco;
-                            }
+                            @include titulo;
                         }
                         .conteudoInfo{
                             p{

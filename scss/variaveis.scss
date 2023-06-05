@@ -6,6 +6,26 @@ $color-preto: #000;
 $color-fundo: #1B1B1B;
 $color-escura01: #232323;
 
+@mixin titulo{
+    width: auto;
+    display: flex;
+    margin-bottom: 36px;
+    align-items: center;
+    .barTitle{
+        display: block;
+        width: 15px;
+        height: 0;
+        border: 1px solid $color-branco;
+        margin-right: 10px;
+        background-color: $color-branco;
+        transition: all 0.3s ease-in-out;
+    }
+    h2{
+        @include sectionTitle;
+        color: #fff;
+    }
+}
+
 @mixin sectionTitle{
     font-family: 'Syne', sans-serif;
     font-style: normal;
