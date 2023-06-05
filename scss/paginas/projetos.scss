@@ -1,0 +1,83 @@
+body{
+    main{
+       .projetos{
+        padding: 163px 52px 52px;
+            .innerWidth{
+                .conteudoProjetos{
+                    .titulo{
+                        @include titulo;
+                    }
+                    .cardProjetos{
+                        display: flex;
+                        gap: 3.75rem;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        .card{
+                            width: 520px;
+                            height: 330px;
+                            overflow: hidden;
+                            transition: 4s;
+                            .cover{
+                                position: relative;
+                                cursor: pointer; 
+                                height: 330px;   
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: top center;
+                                    transition: 3s;
+                                }
+                                .detalhes{
+                                    position: absolute;
+                                    width: 100%;
+                                    top: 55%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    background-color: transparent;
+                                    p{
+                                        font-family: 'DM Sans';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 30px;
+                                        line-height: 39px;
+                                        color: #FFFFFF;
+                                        background-color: transparent;
+                                        transition: 1.5s;
+                                    }
+                                }
+                            }
+                            .cover::before{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(0,0,0,0.65);
+                                transition: 1.5s;
+                            }
+                        }
+                        .card:hover{
+                            .cover{
+                                img{
+                                    object-position: bottom center;
+                                }
+                                .detalhes{
+                                    p{
+                                        opacity: 0;
+                                    }
+                                }
+                            }
+                            .cover::before{
+                                background-color: rgba(0,0,0,0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

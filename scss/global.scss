@@ -4,6 +4,8 @@
 
 @import "./paginas/home.scss";
 
+@import "./paginas/projetos.scss";
+
 @import "./paginas/responsivo.scss";
 
 *{
@@ -46,4 +48,3 @@
 :hover ~ .cursor2{
     opacity: 0;
 } */
-
