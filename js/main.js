@@ -1,11 +1,3 @@
-AOS.init();
-
-var cursor = document.querySelector(".cursor");
-var cursor2 = document.querySelector(".cursor2");
-document.addEventListener("mousemove",function(e){
-    cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-});
-
 const menuHamburguer = document.querySelector(".menuHamburguer");
 const navMenu = document.querySelector(".navMenu");
 const navIdioma = document.querySelector(".navIdioma");
@@ -65,7 +57,6 @@ var swiper = new Swiper(".cardsSlider", {
           },
       },
 });
-
 const mensagem = document.getElementById("mensagemForm");
 mensagem.style.cssText = `height: ${mensagem.scrollHeight}px; overflow-y:hidden`;
 mensagem.addEventListener("keyup", e =>{
@@ -73,40 +64,35 @@ mensagem.addEventListener("keyup", e =>{
     let scHeight = e.target.scrollHeight;
     mensagem.style.height = `${scHeight}px`;
 });
+function enviarForm(event) {
+    event.preventDefault();
 
+    let form = event.target;
+    let formData = new FormData(form);
 
-function enviarEmail(){
-    var params = {
-        nomeContato: document.getElementById("nomeForm").value,
-        emailContato: document.getElementById("emailForm").value,
-        mensagemContato: document.getElementById("mensagemForm").value,
-    };
-
-
-    if(nomeForm.value === '' || emailForm.value === '' || mensagemForm.value === ''){
-        erro.style.display = "block";
-    }else{
-        const serviceID = "service_ex3qosv";
-        const templateID = "template_zwmy3tl";
-
-        emailjs
-        .send(serviceID,templateID,params)
-        .then((res) =>{
-            sucesso.style.display = "block";
-        })
-        .catch((err) => erro.style.display = "block");
-        sucesso.style.display = "block";
-
-        setTimeout(() =>{
-            nomeForm.value = '';
-            emailForm.value = '';
-            mensagemForm.value = '';
-        }, 2000);
-    }
-
+    fetch(form.action, {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === "success") {
+            document.getElementById("sucesso").style.display = "block";
+            document.getElementById("erro").style.display = "none";
+            form.reset();
+        } else {
+            document.getElementById("sucesso").style.display = "none";
+            document.getElementById("erro").style.display = "block";
+        }
+    })
+    .catch(error => {
+        console.error(error);
+        document.getElementById("sucesso").style.display = "none";
+        document.getElementById("erro").style.display = "block";
+    });
+    
     setTimeout(() =>{
         erro.style.display = 'none';
         sucesso.style.display = 'none';
     }, 4000);
-};
-
+}
