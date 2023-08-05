@@ -1,0 +1,34 @@
+body{
+    main{
+        .projeto{
+            padding: 163px 52px 52px;
+            .innerWidth{
+                .titulo{
+                    @include titulo;
+                    color: red;
+                }
+                .info{
+                    margin-bottom: 36px;
+                    h3{
+                        @include syne28;
+                        color: $color-branco;
+                        text-transform: capitalize;
+                        margin-bottom: 16px
+                    }
+                    p{
+                        @include dmSans24;
+                        color: $color-branco;
+    
+                    }
+                }
+                .button{
+                    width: fit-content;
+                    margin-bottom: 36px;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

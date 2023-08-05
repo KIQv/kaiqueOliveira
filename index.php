@@ -24,17 +24,18 @@
     <!-- Fim navbar -->
     <main>
         <!-- Início home -->
-
+        <?php require_once("content/homeSection.php")?>
         <!-- Fim home -->
-
-
+        <?php require_once("content/portfolioHome.php")?>
+        <?php require_once("content/servicos.php")?>
         <hr>
-
+        <?php require_once("content/sobre.php")?>
         <hr>
-
+        <?php require_once("content/contato.php")?>
     </main>
     <hr>
     <footer>
+        <?php require_once("content/rodape.php")?>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>

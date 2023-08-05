@@ -1,8 +1,8 @@
 <article class="innerWidth">
     <nav class="navBar">
-        <a href="#" class="logo"><img src="assets/svg/logo.svg" alt="Logo Kaique Oliveira"></a>
+        <a href="index.php" class="logo"><img src="assets/svg/logo.svg" alt="Logo Kaique Oliveira"></a>
         <ul class="navMenu">
-            <li class="navItem"><a href="index.html" class="navLink" id="homeClick">home</a></li>
+            <li class="navItem"><a href="index.php" class="navLink" id="homeClick">home</a></li>
             <li class="navItem"><a href="projetos.html" class="navLink" id="portfolioClick">portfólio</a></li>
             <li class="navItem"><a href="#sobre" class="navLink" id="sobreClick">sobre</a></li>
             <li class="navItem"><a href="#contato" class="navLink" id="contatoClick">contato</a></li>

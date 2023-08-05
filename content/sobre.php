@@ -66,7 +66,7 @@
                 </div>
             </div>
         </div>
-        <div class="buttonSobre">
+        <div class="button">
             <a target="_blank" href="./assets/pdf/KaiqueOliveira.pdf" class="button">Download CV</a>
         </div>
     </article>
