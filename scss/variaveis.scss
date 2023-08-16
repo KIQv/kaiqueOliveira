@@ -117,10 +117,17 @@ $color-escura01: #232323;
         transition: all 1s;
     }
 }
-.button:hover{
+.button:not(:disabled):hover {
     color: $color-fundo;
     background-color: $color-branco;
     a{
         color: $color-fundo;
     }
+    button{
+        color: $color-fundo;
+    }
 }
+button:disabled{
+    color: gray;
+    cursor: not-allowed;
+  }
