@@ -33,7 +33,7 @@
                 </a>
             </div>
             <div class="direitos">
-                <p>2022 • Todos os direitos reservados - Desenvolvido por <a href="https://www.linkedin.com/in/kiqv/" target="_blank">KIQ</a></p>
+                <p>Copyright © 2022 <a href="https://okaique.com" target="_blank" style="text-decoration: underline dotted #fff;">okaique.com</a>. Todos os direitos reservados.</p>
             </div>
         </div>
     </article>

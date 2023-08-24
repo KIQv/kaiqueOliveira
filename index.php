@@ -2,6 +2,14 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Olá! Meu nome é Kaique, sou um desenvolvedor front-end, focado em performance, qualidade, responsividade e SEO.">
+    <meta name="keywords" content="website, designer, site, programação, programador,  kiq, desenvolvimento, portfólio, front-end, kaique, frontend, ui, sites, ui designer, developer">
+    <meta name="copyright" content="Kaique Oliveira">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta property="og:image" content="./assets/img/preview.png">
+    <meta property="og:title" content="Portfólio Kaique Oliveira">
+    <meta property="og:description" content="Portfólio Kaique Oliveira">
+    <link rel="canonical" href="https://okaique.com">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaique Oliveira</title>
